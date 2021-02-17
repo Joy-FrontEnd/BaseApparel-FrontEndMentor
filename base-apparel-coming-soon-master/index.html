@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <div class="container">
@@ -30,13 +32,22 @@
         transform="translate(0 -.088)" />
     </g>
   </svg>
-  <h1>We're coming soon</h1>
+  <img src="images/hero-mobile.jpg" alt="hero image">
+  <div class="main"> 
+  <h1><strong>We're</strong> <br> coming <br> soon</h1>
 
   <p>Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.
   </p>
-  <input type="text" placeholder="Email Address"></input>
-  <img src="images/hero-desktop.jpg" alt="">
+  <!--<input type="text" placeholder="Email Address">
+  <button></button> -->
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Email Address" aria-label="email address"
+      aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"></button>
+  </div>
+  </div>
   </div>
   <footer>
     <p class="attribution">
